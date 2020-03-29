@@ -11,7 +11,7 @@ function bencher<I extends any[], O>(fns: Record<string|number, (...args: I) => 
     for (const fnName in fns) {
       const fn = fns[fnName]
       runner.add(
-        `${fn.name ?? fnName}(${argName})`,
+        `${fn.name || fnName}(${argName})`,
         () => {
           //@ts-ignore
           fn(...args[argName as keyof typeof args] as Parameters<typeof fn>)

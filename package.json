@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "printf '# node ' > README.md; node -v >> README.md; npm run start >> README.md",
     "start": "find . -type f -iname bench.ts | xargs ts-node --transpile-only",
     "start:babel": "find . -type f -iname bench.ts | xargs babel-node --extensions .ts --",
     "test": "echo \"Error: no test specified\" && exit 1"

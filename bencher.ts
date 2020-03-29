@@ -19,9 +19,15 @@ function bencher<I extends any[], O>(fns: Record<string|number, (...args: I) => 
       )
     }
     runner
+    .on('start', () => console.log(`## ${
+      process.mainModule?.filename
+      .replace(process.cwd(), '')
+      .replace(/^[\/\\]/, '')
+    }`))
+    .on('error', ({target: {error}}: any) => console.error(error))
     .on('cycle', ({target}: any) => console.log(`${target}`))
     .on('complete', function(this: Suite) {
-      console.log(`Fastest is ${this.filter('fastest').map(
+      console.log(`- Fastest is ${this.filter('fastest').map(
         //@ts-ignore
         'name'
       )}`)

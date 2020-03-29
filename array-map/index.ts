@@ -1,4 +1,6 @@
+
 export {
+  // impossible to comapre with Array.prototype.map
   forOf, forI0, forIR, arForEach, arMap
 }
 
@@ -32,13 +34,12 @@ function forIR<I,O>(arr: I[], fn: (value: I, index: number) => O) {
   return $return
 }
 
-
 function arMap<I,O>(arr: I[], fn: (value: I, index: number) => O) {   
   return arr.map(fn)
 }
 
 function arForEach<I,O>(arr: I[], fn: (value: I, index: number) => O) {   
-  const $return = new Array(length)
+  const $return = new Array(arr.length)
   arr.forEach((value, index) => $return[index] = fn(value, index))
   return $return
 }

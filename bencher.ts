@@ -4,7 +4,11 @@ export {
   bencher
 }
 
-function bencher<I extends any[], O>(fns: Record<string|number, (...args: I) => O>, args: Record<string, I>) {
+function bencher<I extends any[], O>(
+  fns: Record<string|number, (...args: I) => O>,
+  args: Record<string, I>,
+  prepare: Record<string|number, (...args: any) => any>
+) {
   console.log(`## ${
     process.mainModule?.filename
     .replace(process.cwd(), '')
@@ -16,11 +20,16 @@ function bencher<I extends any[], O>(fns: Record<string|number, (...args: I) => 
     
     for (const fnName in fns) {
       const fn = fns[fnName]
+      , _fnArgs = args[argName as keyof typeof args]
+      , fnArgs = !(prepare && fnName in prepare)
+      ? _fnArgs
+      : prepare[fnName](..._fnArgs)
+
       runner.add(
         `${fn.name || fnName}`,
         () => {
           //@ts-ignore
-          fn(...args[argName as keyof typeof args] as Parameters<typeof fn>)
+          fn(...fnArgs as Parameters<typeof fn>)
         }
       )
     }

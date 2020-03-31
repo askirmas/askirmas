@@ -1,7 +1,9 @@
-
+const map = Array.prototype.map.call
 export {
-  // impossible to comapre with Array.prototype.map
-  forOf, forI0, forIR, arForEach, arMap
+  map,
+  arForEach, arMap,
+  forI0, forIR, whileIR,
+  forOf, 
 }
 
 function forOf<I,O>(arr: I[], fn: (value: I, index: number) => O) {
@@ -33,6 +35,19 @@ function forIR<I,O>(arr: I[], fn: (value: I, index: number) => O) {
 
   return $return
 }
+
+function whileIR<I,O>(arr: I[], fn: (value: I, index: number) => O) {
+  const {length} = arr
+  , $return = new Array(length)
+  
+  let i = length
+  
+  while(i--)
+    $return[i] = fn(arr[i], i)
+
+  return $return
+}
+
 
 function arMap<I,O>(arr: I[], fn: (value: I, index: number) => O) {   
   return arr.map(fn)

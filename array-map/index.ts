@@ -1,6 +1,6 @@
-const map = Array.prototype.map.call
+const Array_prototype_map = "map" as const
 export {
-  map,
+  Array_prototype_map,
   arForEach, arMap,
   forI0, forIR, whileIR,
   forOf, 

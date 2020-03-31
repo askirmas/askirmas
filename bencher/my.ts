@@ -15,6 +15,7 @@ function myBencher<
   P extends string, F extends P, A extends string,
   I extends any[], O
 >(
+  //TODO TS that can be string for method check
   fns: Record<F, (...args: I) => O>,
   args: Record<A, I>,
   prepare?: Record<P, (...args: any) => I>
@@ -45,7 +46,7 @@ function myBencher<
         : prepare[fnName](..._fnArgs)
         //</normalized>
         , suite = result[fnName]
-        , native = isNative(fn)
+        , isMethod = typeof fn === 'string'
         if (suite.error)
           continue
           
@@ -54,13 +55,13 @@ function myBencher<
           try {
             let d0: number, start: number, end: number
             
-            if (native) {             
+            if (isMethod) {             
               const args4native = fnArgs.slice() 
               , $this = args4native.shift()
               
               d0 = now()
               start = now()
-              $this[fnName](...args4native)
+              $this[fn](...args4native)
               end = now()
             } else {
               d0 = now()
@@ -74,7 +75,7 @@ function myBencher<
             elapsed += el
             suite.avgOfSquares += el * el / rc
           } catch(e) {
-            suite.error = typeof e === 'string' ? e : `@${fnName}: #${e.name}: ${e.message} - ${e.stack}`
+            suite.error = typeof e === 'string' ? e : `@${fnName} #${e.name}: ${e.message} - ${e.stack}`
             i = 0
           }
         }

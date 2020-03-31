@@ -1,20 +1,16 @@
-import Benchmark, {Suite} from "benchmark"
+import { Suite } from "benchmark"
 
 export {
-  bencher
+  benchmarkBencher
 }
-
-function bencher<I extends any[], O>(
-  fns: Record<string|number, (...args: I) => O>,
-  args: Record<string, I>,
-  prepare: Record<string|number, (...args: any) => any>
+function benchmarkBencher<
+  P extends string|number, F extends P, A extends string,
+  I extends any[], O
+>(
+  fns: Record<F, (...args: I) => O>,
+  args: Record<A, I>,
+  prepare?: Record<P, (...args: any) => I>
 ) {
-  console.log(`## ${
-    process.mainModule?.filename
-    .replace(process.cwd(), '')
-    .replace(/^[\/\\]/, '')
-  }`)
-
   for (const argName in args) {
     const runner = new Suite()
     
@@ -43,6 +39,7 @@ function bencher<I extends any[], O>(
         'name'
       )}`)
     })
-    .run({name: argName, async: !!process.env.ASYNC})
+    .run({name: argName, async: !!process.env.ASYNC, })
+
   }
 }

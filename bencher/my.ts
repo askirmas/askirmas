@@ -4,8 +4,11 @@ import {shuffle, objectFrom, isNative} from "../utils"
 import { statTemplate, Stat } from "../defs"
 
 const {now} = performance
-, runs = 5
-, cycles = 5
+, maxSamples = 100
+, maxCycles = 5
+// maxTime
+// notShuffleArgs
+// notShuffleFuncs
 
 export {
   myBencher
@@ -20,7 +23,7 @@ function myBencher<
   args: Record<A, I>,
   prepare?: Record<P, (...args: any) => I>
 ) {
-  const rc = runs * cycles
+  const rc = maxSamples * maxCycles
   //, rcK = rc / (rc - 1)
   , argNames = Object.keys(args) as A[]
   , {length: argsLength} = argNames
@@ -28,7 +31,7 @@ function myBencher<
   , {length: fnLength} = fnNames
   , results = objectFrom(argNames, fnNames, statTemplate)
   
-  for (let cycle = cycles; cycle--;) {
+  for (let cycle = maxCycles; cycle--;) {
     const argsShuffled = shuffle(argNames)
     
     for (let ai = 0; ai < argsLength; ai++) {
@@ -51,7 +54,7 @@ function myBencher<
           continue
           
         let elapsed = 0
-        for (let i = runs; i--;) {
+        for (let i = maxSamples; i--;) {
           try {
             let d0: number, start: number, end: number
             

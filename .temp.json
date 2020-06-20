@@ -1,0 +1,398 @@
+{
+  "10, idfn": {
+    "map": {
+      "elapsed": 0,
+      "ops": 1166588,
+      "avgOfSquares": 8.11264105802234e-7,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 0,
+      "ops": 771033,
+      "avgOfSquares": 0.000001926744147495163,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 1094187,
+      "avgOfSquares": 9.22808939138875e-7,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 0,
+      "ops": 1261926,
+      "avgOfSquares": 7.86015932820461e-7,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 989198,
+      "avgOfSquares": 0.0000031392022037435298,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 0,
+      "ops": 1015971,
+      "avgOfSquares": 0.0000010213021813282319,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 0,
+      "ops": 814173,
+      "avgOfSquares": 0.0000017326760525193664,
+      "average": 0
+    }
+  },
+  "30, idfn": {
+    "map": {
+      "elapsed": 0,
+      "ops": 610605,
+      "avgOfSquares": 0.000004406903448510577,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 0,
+      "ops": 197036,
+      "avgOfSquares": 0.0002435655693909028,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 393050,
+      "avgOfSquares": 0.00003077679561313884,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 0,
+      "ops": 231532,
+      "avgOfSquares": 0.00023659056555420612,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 506595,
+      "avgOfSquares": 0.000020472558624171084,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 0,
+      "ops": 67916,
+      "avgOfSquares": 0.004064951478223396,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 0,
+      "ops": 366225,
+      "avgOfSquares": 0.00003830757196057688,
+      "average": 0
+    }
+  },
+  "100, idfn": {
+    "map": {
+      "elapsed": 0,
+      "ops": 482039,
+      "avgOfSquares": 0.0000044334024495357175,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 0,
+      "ops": 267193,
+      "avgOfSquares": 0.00001879338215165838,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 472402,
+      "avgOfSquares": 0.000009301370616278118,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 0,
+      "ops": 489150,
+      "avgOfSquares": 0.000008336013631844444,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 560525,
+      "avgOfSquares": 0.000006570761700930849,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 0,
+      "ops": 466087,
+      "avgOfSquares": 0.000004725429000232428,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 0,
+      "ops": 354851,
+      "avgOfSquares": 0.000010071504657220286,
+      "average": 0
+    }
+  },
+  "300, idfn": {
+    "map": {
+      "elapsed": 0,
+      "ops": 211273,
+      "avgOfSquares": 0.000024481793760108282,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 0,
+      "ops": 161196,
+      "avgOfSquares": 0.00003927297096298743,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 700495,
+      "avgOfSquares": 0.000002292096587293013,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 0,
+      "ops": 754330,
+      "avgOfSquares": 0.0000017744439820621684,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 775049,
+      "avgOfSquares": 0.0000016821958510443435,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 0,
+      "ops": 220204,
+      "avgOfSquares": 0.0000207428491109235,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 0,
+      "ops": 210544,
+      "avgOfSquares": 0.000024011247061103693,
+      "average": 0
+    }
+  },
+  "1000, idfn": {
+    "map": {
+      "elapsed": 0,
+      "ops": 75084,
+      "avgOfSquares": 0.00017836511108683007,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 0,
+      "ops": 47894,
+      "avgOfSquares": 0.0004779627307234113,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 298807,
+      "avgOfSquares": 0.000012724905260624863,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 0,
+      "ops": 304213,
+      "avgOfSquares": 0.000012379186744214677,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 315999,
+      "avgOfSquares": 0.000010852926200289324,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 0,
+      "ops": 71943,
+      "avgOfSquares": 0.0001962675515321483,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 0,
+      "ops": 71554,
+      "avgOfSquares": 0.000199465722365052,
+      "average": 0
+    }
+  },
+  "3000, idfn": {
+    "map": {
+      "elapsed": 0,
+      "ops": 25243,
+      "avgOfSquares": 0.0016141589533533577,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 1,
+      "ops": 17024,
+      "avgOfSquares": 0.0036566697931452873,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 108676,
+      "avgOfSquares": 0.00009325798612656364,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 3,
+      "ops": 6706,
+      "avgOfSquares": 0.48948375535697386,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 66224,
+      "avgOfSquares": 0.0010296516747780938,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 0,
+      "ops": 25932,
+      "avgOfSquares": 0.0014933670075594943,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 1,
+      "ops": 24483,
+      "avgOfSquares": 0.0016777692966328255,
+      "average": 0
+    }
+  },
+  "10000, idfn": {
+    "map": {
+      "elapsed": 3,
+      "ops": 7407,
+      "avgOfSquares": 0.019430227325303234,
+      "average": 0
+    },
+    "forOf": {
+      "elapsed": 5,
+      "ops": 4649,
+      "avgOfSquares": 0.05136507894063096,
+      "average": 0
+    },
+    "forI0": {
+      "elapsed": 0,
+      "ops": 41251,
+      "avgOfSquares": 0.0006232055798716158,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 0,
+      "ops": 35267,
+      "avgOfSquares": 0.0010586609289490057,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 0,
+      "ops": 38480,
+      "avgOfSquares": 0.0008005237937660576,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 6,
+      "ops": 3769,
+      "avgOfSquares": 0.5533445101630913,
+      "average": 0
+    },
+    "arForEach": {
+      "elapsed": 3,
+      "ops": 7742,
+      "avgOfSquares": 0.0167845553397355,
+      "average": 0
+    }
+  },
+  "100000, idfn": {
+    "map": {
+      "elapsed": 53,
+      "ops": 467,
+      "avgOfSquares": 8.09051122239013,
+      "average": 2
+    },
+    "forOf": {
+      "elapsed": 60,
+      "ops": 413,
+      "avgOfSquares": 6.306338455376426,
+      "average": 2
+    },
+    "forI0": {
+      "elapsed": 12,
+      "ops": 2013,
+      "avgOfSquares": 0.30028545077849206,
+      "average": 0
+    },
+    "forIR": {
+      "elapsed": 13,
+      "ops": 1855,
+      "avgOfSquares": 0.3592105599714173,
+      "average": 0
+    },
+    "whileIR": {
+      "elapsed": 16,
+      "ops": 1485,
+      "avgOfSquares": 0.9146036151884673,
+      "average": 0
+    },
+    "arMap": {
+      "elapsed": 34,
+      "ops": 724,
+      "avgOfSquares": 1.920979245958096,
+      "average": 1
+    },
+    "arForEach": {
+      "elapsed": 41,
+      "ops": 608,
+      "avgOfSquares": 2.881512218785351,
+      "average": 1
+    }
+  },
+  "10000000, idfn": {
+    "map": {
+      "elapsed": 3605,
+      "ops": 6,
+      "avgOfSquares": 20814.85532297739,
+      "average": 144
+    },
+    "forOf": {
+      "elapsed": 5435,
+      "ops": 4,
+      "avgOfSquares": 47678.83522576983,
+      "average": 217
+    },
+    "forI0": {
+      "elapsed": 1125,
+      "ops": 22,
+      "avgOfSquares": 2033.0279103388725,
+      "average": 45
+    },
+    "forIR": {
+      "elapsed": 1125,
+      "ops": 22,
+      "avgOfSquares": 2027.8195598348084,
+      "average": 45
+    },
+    "whileIR": {
+      "elapsed": 1147,
+      "ops": 21,
+      "avgOfSquares": 2117.8149371886284,
+      "average": 45
+    },
+    "arMap": {
+      "elapsed": 3605,
+      "ops": 6,
+      "avgOfSquares": 20806.57066174059,
+      "average": 144
+    },
+    "arForEach": {
+      "elapsed": 3919,
+      "ops": 6,
+      "avgOfSquares": 24593.692764816442,
+      "average": 156
+    }
+  }
+}

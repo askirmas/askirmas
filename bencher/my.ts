@@ -78,7 +78,10 @@ function myBencher<
             elapsed += el
             suite.avgOfSquares += el * el / rc
           } catch(e) {
-            suite.error = typeof e === 'string' ? e : `@${fnName} #${e.name}: ${e.message} - ${e.stack}`
+            suite.error = typeof e === 'string'
+            ? e
+            : `@${fnName} #${e.name}: ${e.message} - ${e.stack}`
+            
             i = 0
           }
         }
@@ -87,6 +90,7 @@ function myBencher<
         if (cycle !== 0) 
           continue
         elapsed = suite.elapsed
+        
         const average = elapsed / rc 
         , stat: Partial<Stat> = {
           average: average | 0,
